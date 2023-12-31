@@ -1,0 +1,237 @@
+body {
+    font-size: 18px;
+}
+
+.avatar {
+    max-width: 32px;
+}
+
+.thumbnail {
+    border-radius: 15px;
+}
+
+.imgsContainer {
+    padding-left: 15%;
+}
+
+.productInfo {
+    margin-left: 10%;
+    padding: 3%;
+}
+
+.productInfo p {
+    line-height: 2em;
+}
+
+.displayImg,
+.modalDisplayImg {
+    max-height: 430px;
+    width: auto;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.thumbnail-container-hover {
+    background-color: hsl(0, 10%, 100%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    width: 33%;
+    position: relative;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: hsl(26, 100%, 55%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.circle-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle-background:hover svg path {
+    stroke: hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.thumbnail.selected,
+.thumbnail.hovered {
+    opacity: 0.75;
+}
+
+.thumbnail.selected {
+    outline: 3px solid hsl(26, 100%, 55%);
+    border-radius: 12px;
+}
+
+.thumbnailBorder {
+    background-color: white;
+}
+
+.popup {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    margin: 4% 70%;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #ccc;
+    z-index: 100000000000000000;
+    border-radius: 10px;
+}
+
+.cancel {
+    display: relative;
+    cursor: pointer;
+    margin: 0;
+    float: right;
+    height: 10px;
+    width: 14px;
+    padding: 0 0 5px 0;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    border-radius: 3px;
+    z-index: 100000000000000000;
+}
+
+.cancel:hover {
+    background: rgb(255, 50, 50);
+}
+
+.productThumbnailCart {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    float: left;
+}
+
+.popup-quantity {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.popup-price {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: black;
+}
+
+.imgThumbnailsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: auto;
+}
+
+.thumbnailBorder {
+    flex: 0 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+    margin-right: 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnailBorder:last-child {
+    margin-right: 0;
+}
+
+.imgThumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.thumbnailBorder {
+    flex: 0 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+    margin-right: 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.thumbnailBorder {
+    background-color: white;
+    flex: 0 0 calc(25% - 1rem);
+    max-width: calc(25% - 1rem);
+    margin-right: 1rem;
+    border-radius: 12px;
+}
+
+.modal .thumbnailBorder {
+    border-radius: 15px;
+}
+
+.addToCart {
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 15px;
+}
